@@ -43,12 +43,28 @@ public class Daysadapter  extends RecyclerView.Adapter<Daysadapter.Daysadaptervw
     }
 
     public  class Daysadaptervwholder extends RecyclerView.ViewHolder{
-        ImageView imageVwdays;
+        ImageView imageVwdelete;
         TextView day;
         public Daysadaptervwholder(final View itemview){
             super(itemview);
-            imageVwdays=itemview.findViewById(R.id.imagevw);
+            imageVwdelete=itemview.findViewById(R.id.imagevw);
             day=itemview.findViewById(R.id.textvwday);
+            imageVwdelete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int postobedelete=getAdapterPosition();
+                    String daynametobedelete=daysofweek.get(postobedelete);
+                    int selectedItemId = -1;
+                    for (int i = 0; i < daysofweek.size(); i++) {
+                        if (daynametobedelete.equals(daysofweek.get(i).toString())) {
+                            daysofweek.remove(postobedelete);
+                            notifyItemRemoved(postobedelete);
+                            break;
+                        }
+                    }
+
+                }
+            });
             itemview.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

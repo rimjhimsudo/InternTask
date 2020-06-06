@@ -45,6 +45,18 @@ public class HomeFragment extends Fragment {
         arrayList.add("Sunday");
         daysadapter=new Daysadapter(arrayList);
         recyclerView.setAdapter(daysadapter);
+        /*int postobedelete=recyclerView.getChildPosition(view);
+        RecyclerView.ViewHolder holder;
+        holder.getAdapterPosition();
+        String daynametobedelete=arrayList.get(postobedelete);
+        int selectedItemId = -1;
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(postobedelete).toString().equals(arrayList.get(i).toString())) {
+                arrayList.remove(postobedelete);
+                daysadapter.notifyItemRemoved(postobedelete);
+                break;
+            }
+        }*/
 
         return view;
 
