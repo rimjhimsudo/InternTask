@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1023056184091",
+    "firebase_url": "https://internround1.firebaseio.com",
+    "project_id": "internround1",
+    "storage_bucket": "internround1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023056184091:android:00aa21f5918a83d7adc9be",
+        "android_client_info": {
+          "package_name": "com.enjoy.interntask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023056184091-b8vjlplpdngce46l0b9nih5um3eotvo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIV30NC6xbumEer0wzcf7D3qYXvZ7p7pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023056184091-b8vjlplpdngce46l0b9nih5um3eotvo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
